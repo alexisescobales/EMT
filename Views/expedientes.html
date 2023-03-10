@@ -11,10 +11,9 @@
   <title>Expedientes</title>
 </head>
 
-<body 
-style="background-image: url(./img/fondoVerdePetroleo.jpg); ">
+<body style="background-image: url(./img/fondoVerdePetroleo.jpg); ">
 
-<!-- navbar de prueba -->
+  <!-- navbar de prueba -->
   <div class="rounded-bottom " id="cuadroNav" style="background-color: white;">
     <div class="container">
       <nav class="navbar navbar-expand-lg bg-body-tertiary  ">
@@ -84,11 +83,13 @@ style="background-image: url(./img/fondoVerdePetroleo.jpg); ">
   <!-- apartado expedientes -->
   <div class="container">
     <div class="p-3"></div>
-    <div class="d-flex p-2"> <h1>Expedientes</h1></div>
+    <div class="d-flex p-2">
+      <h1>Expedientes</h1>
+    </div>
 
     <div class="row ">
       <div class="col-8 mb-3" style="background-color: aqua;">
-        <div class="d-inline-flex p-2"> 
+        <div class="d-inline-flex p-2">
           <!-- buscador -->
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Buscar">
@@ -96,14 +97,14 @@ style="background-image: url(./img/fondoVerdePetroleo.jpg); ">
           </form>
         </div>
         <div class="d-flex flex-row-reverse">
-            <!-- seleccion  -->
+          <!-- seleccion  -->
           <div class="p-1">
             <select class="form-select form-select-sm" aria-label="Ejemplo de .form-select-sm">
               <option selected aria-label="Buscar">Orden Busqueda</option>
               <option value="1">A-Z</option>
               <option value="2">Z-A</option>
               <option value="3">Tres</option>
-            </select> 
+            </select>
           </div>
         </div>
         <div class="container">
@@ -111,84 +112,86 @@ style="background-image: url(./img/fondoVerdePetroleo.jpg); ">
           <div class="p-3"></div>
           <div class="card mt-1 mx-1 text-center">
             <div class="card-body">
-          <table class="table">
-            <thead class="bg-primary">
-              <tr>
-                <th scope="col">Username</th>
-                <th scope="col">Nombre</th>
-                <th scope="col">Tipo</th>
-                <th scope="col">Creado</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>Thornton</td>
-                <td>Thornton</td>
-                <td>@twitter</td>
-              </tr>
-            </tbody>
-          </table>
+              <table class="table">
+                <thead class="bg-primary">
+                  <tr>
+                    <th scope="col">Username</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Tipo</th>
+                    <th scope="col">Creado</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Thornton</td>
+                    <td>Thornton</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
       </div>
       <div class="col-4" style="background-color: beige;">
-        <div class="d-inline-flex p-2"> <h5> Detalles del Expediente </h5></div>
+        <div class="d-inline-flex p-2">
+          <h5> Detalles del Expediente </h5>
+        </div>
         <div class="d-inline-flex p-2"> Carta de llamada de los expedientes</div>
         <!-- espaciado -->
         <div class="p-3"></div>
         <div class="card mt-1 mx-1 text-center">
           <div class="card-body">
-        <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">Cod. Exp: 
-                <!--codigo de expediente seleccionado -->
-                <div id="codigo">
-                  123
-                </div>
-              </th>
-              <th scope="col">Estado: 
-                <div class="p-1" style="background-color: brown;">
-                  <select class="form-select form-select-sm" aria-label="Ejemplo de .form-select-sm">
-                    <option selected aria-label="Buscar">Estado</option>
-                    <option value="1">Uno</option>
-                    <option value="2">Dos</option>
-                    <option value="3">Tres</option>
-                  </select>  
-                </div>
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Cod. Exp:
+                    <!--codigo de expediente seleccionado -->
+                    <div id="codigo">
+                      123
+                    </div>
+                  </th>
+                  <th scope="col">Estado:
+                    <div class="p-1" style="background-color: brown;">
+                      <select class="form-select form-select-sm" aria-label="Ejemplo de .form-select-sm">
+                        <option selected aria-label="Buscar">Estado</option>
+                        <option value="1">Uno</option>
+                        <option value="2">Dos</option>
+                        <option value="3">Tres</option>
+                      </select>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
 
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td colspan="2">Larry the Bird</td>
-            </tr>
-          </tbody>
-        </table>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td colspan="2">Larry the Bird</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
