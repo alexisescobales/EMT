@@ -7,8 +7,8 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Open ayuda.html",
-            "file": "c:\\xampp\\htdocs\\EMT\\Views\\ayuda.html"
+            "name": "Open helpbox.html",
+            "file": "c:\\xampp\\htdocs\\EMT\\Views\\helpbox.html"
         }
     ]
 }
