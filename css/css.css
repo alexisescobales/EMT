@@ -1,5 +1,7 @@
 /* PLANTILLA PARA TODAS LAS PAGINAS */     /* PLANTILLA PARA TODAS LAS PAGINAS */
-
+*{
+font-family: 'Roboto', sans-serif;
+}
 /* FONDO BLANCO PARA TODAS LAS PAGINAS */
 body{
     background-color: rgb(255, 255, 255);
@@ -14,14 +16,21 @@ body{
 h1.titulo{
     margin-top: 70px;
     margin-bottom: 30px;
-    font-weight: bold;
+    font-family: 'Lato', sans-serif;
 }   
+
+
+#linea{
+    color: #BB1167;
+}
+
 
 /* SUBTITULO PRINCIAPL DE LA PAGINA */
 h2.subtitulo{
     margin-top: 35px;
     margin-bottom: 40px;
     font-weight: bold;
+    font-family: 'Lato', sans-serif;
 }
 
 /* SEPARACION ENTRE ELEMNTOS EN LA NAVBAR */
@@ -29,6 +38,7 @@ li{
     margin-top: 2px;
     margin-right: 70px;
     font-size: 20px;
+    color: white;
 }
 
 /* PLANTILLA PARA TODAS LAS PAGINAS */     /* PLANTILLA PARA TODAS LAS PAGINAS */
@@ -48,6 +58,11 @@ li{
     float: right;  
 
 }
+#card_incidentes_helpbox{
+width: 300px;
+}
+
+
 
 
 
