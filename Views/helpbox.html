@@ -13,12 +13,16 @@
   <!-- montserrat -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css"  href="../css/css.css">
 
 
  
-  <title>Ayuda</title>
+  <title>HelpBox</title>
 </head>
 
 <body>
@@ -38,23 +42,19 @@
             <!-- en el "ul" el ajuste en medio es "mx-auto"  y en el lado izquierdo "me-auto" -->
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active"
-                  style="color: #ffffff; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"
+                <a class="nav-link active" 
                   aria-current="page" href="#">EXPEDIENTES</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active"
-                  style="color: #ffffff; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"
                   aria-current="page" href="#">GRAFICOS</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active"
-                  style="color: #ffffff; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"
                   aria-current="page" href="#">HELPBOX</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active"
-                  style="color: #ffffff; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"
                   aria-current="page" href="#">AYUDA</a>
               </li>
             </ul>
@@ -67,7 +67,7 @@
             <ul class="nav justify-content-end">
               <div class="nav-item dropdown d-flex">
 
-                <a style="color: #000000; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"
+                <a style="color: #000000;"
                   class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                   aria-expanded="false">
                   <i class="bi bi-person-circle"></i>
@@ -89,26 +89,51 @@
   </div>
   <div class="container">
 
-    <h1 class="titulo">Ayuda</h1>
+    <h1 class="titulo">HelpBox</h1>
 
-    <hr class="w-100 clearfix d-md" />
+    <hr id="linea" class="w-100 clearfix d-md" />
   
-    <h2 class="subtitulo">Com utilitzo l’aplicació?</h2>
+    <h2 class="subtitulo">Traducciones</h2>
 
 
-    <div id="explicacion1">
-        <div class="container">
-            Explicacion <br> <br>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec massa posuere, mollis sem nec, venenatis nisl. Nullam hendrerit erat id leo sagittis tincidunt. Aliquam ut leo consectetur quam vehicula tincidunt et a neque. Curabitur a massa a dolor porta efficitur. Praesent et molestie ante. Mauris eget neque tortor. Donec id diam in nisl rhoncus mattis. Morbi quis erat molestie, tincidunt orci ut, sodales.<br><br>
-            Curabitur condimentum convallis dolor, ac cursus mauris iaculis vel. Cras suscipit sit amet risus quis gravida. Sed id aliquet tellus. Fusce suscipit orci a dui dapibus, sed pellentesque urna imperdiet. Donec luctus massa a quam vulputate, non facilisis est bibendum. Praesent pretium nulla in iaculis congue. Sed euismod ullamcorper pretium.
-            Aliquam venenatis lobortis mi, sit amet lobortis est congue.<br> <br>
-            Suspendisse finibus commodo tellus, quis molestie urna sollicitudin sed. Mauris eget luctus magna, sit amet dignissim leo. Mauris sodales nibh ante, sed tincidunt velit aliquam elementum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc auctor consectetur aliquam. In est leo, facilisis a sem eget, congue varius odio. Nulla sed justo nunc.
+    <div id="card_incidentes_helpbox" class="card mt-0 mx-5 text-center border-0">
+          <div class="card-body">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">ESPAÑOL</th>
+                  <th scope="col">INGLES</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Apuñalamiento</td>
+                  <td>Stabbing</td>
+                </tr>
+                <tr>
+                  <td>Arbol caido</td>
+                  <td>Fallen tree</td>
+                </tr>
+                <tr>
+                  <td>Ataque al corazon</td>
+                  <td>Heart attack</td>
+                </tr>
+                <tr>
+                  <td>Ahogamiento</td>
+                  <td>@Heart attack</td>
+                </tr>
+                <tr>
+                  <td>Ataque al corazon</td>
+                  <td>@Heart attack</td>
+                </tr>
+                <tr>
+                  <td>Ataque al corazon</td>
+                  <td>@Heart attack</td>
+                </tr>
+              </tbody>
+            </table>
         </div>
-    </div>
-
-    <div id="explicacion">
-        <img src="../Views/img/fondo_video.PNG" alt="Girl in a jacket" width="600" height="520">
-    </div>
+     </div>
 
 </body>
 
