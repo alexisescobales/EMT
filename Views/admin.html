@@ -78,19 +78,26 @@
     </div>
 
   </div>
-
+  <!-- br (espacio) para que salga el sombreado -->
+  <br>
   <div class="container">
-    <!-- titulos -->
-    <div class="p-3"></div>
-    <div class="d-flex p-1">
-      <h1 class="titulo">Administración</h1>
+    <!-- titulos y subtitulos en card -->
+    <div class="card  mx-5 text-center border-0">
+      <div class="card-body ">
+        <!-- TITULO Y SUBTITULO-->
+        <div class="d-flex ">
+          <h1 class="titulo">Administración</h1>
+        </div>
+
+        <hr id="linea" class="w-100 clearfix d-md m-0" />
+        
+        <div class="d-flex p-3">
+          <h3 class="subtitulo">Usuarios</h3>
+        </div>
+      </div>
     </div>
 
-    <hr id="linea" class="w-100 clearfix d-md" />
 
-    <div class="d-flex p-1">
-      <h1 class="subtitulo">Usuarios</h1>
-    </div>
     <!-- SELECCION USUARIOS  -->
 
     <div class="card mt-0 mx-5 text-center border-0">
@@ -99,8 +106,8 @@
         <div class="row">
           <div class="col-2">
             <!-- boton de añadir usuario -->
-            <a class="btn btn-warning text-white" href="#">
-              <i class="bi bi-plus-circle-dotted"></i>
+            <a class=" shadow btn btn-warning text-white rounded-3" href="#">
+              <i class=" bi bi-plus-circle "></i>
               Nuevo usuario
             </a>
           </div>
@@ -137,12 +144,12 @@
         <!-- tabla de datos -->
         <table class="table table-striped border-2">
           <thead class="shadow bg-primary ">
-            <tr class="text-white">
+            <tr class="text-white" style="background-color: #0F9DB2;">
               <th class="text-center" scope="col">UserName</th>
               <th class="text-center" scope="col">Nombre</th>
               <th class="text-center" scope="col">Tipo</th>
               <th class="text-center" scope="col">Creado</th>
-              <th class="text-center" scope="col">Editar/Borrar</th>
+              <th class="text-center" scope="col">Editar / Borrar</th>
             </tr>
           </thead>
           <tbody>
@@ -151,19 +158,87 @@
               <td class="text-center">$Nombre</td>
               <td class="text-center">$Operador</td>
               <td class="text-center">$12-03-23</td>
-
               <!-- botones -->
               <td class="text-center">
                 <form action="" class="float-end mx-1" method="POST">
-                  <button type="submit" class="btn btn-danger"><i class="bi bi-trash-fill"></i> Esborrar</button>
+                  <button type="submit" class="btn btn-danger"><i class="bi bi-trash-fill"></i></button>
                 </form>
                 <form action="" class="float-end">
-                  <button type="submit" class="btn btn-secondary"><i class="bi bi-pen"></i> Editar</button>
+                  <button type="submit" class="btn btn-secondary"><i class="bi bi-pencil-square"></i> </button>
                 </form>
               </td>
             </tr>
+
+            <!-- PRUEBAS -->
+            <tr class="text-center">
+              <th class="text-center" scope="row">$nameUser</th>
+              <td class="text-center">$Nombre</td>
+              <td class="text-center">$Operador</td>
+              <td class="text-center">$12-03-23</td>
+              <!-- botones -->
+              <td class="text-center">
+                <form action="" class="float-end mx-1" method="POST">
+                  <button type="submit" class="btn btn-danger"><i class="bi bi-trash-fill"></i> </button>
+                </form>
+                <form action="" class="float-end">
+                  <button type="submit" class="btn btn-secondary"><i class="bi bi-pencil-square"></i></button>
+                </form>
+              </td>
+            </tr>
+            <tr class="text-center">
+              <th class="text-center" scope="row">$nameUser</th>
+              <td class="text-center">$Nombre</td>
+              <td class="text-center">$Operador</td>
+              <td class="text-center">$12-03-23</td>
+              <!-- botones -->
+              <td class="text-center">
+                <form action="" class="float-end mx-1" method="POST">
+                  <button type="submit" class="btn btn-danger"><i class="bi bi-trash-fill"></i> </button>
+                </form>
+                <form action="" class="float-end">
+                  <button type="submit" class="btn btn-secondary"><i class="bi bi-pencil-square"></i> </button>
+                </form>
+              </td>
+            </tr>
+            <tr class="text-center">
+              <th class="text-center" scope="row">$nameUser</th>
+              <td class="text-center">$Nombre</td>
+              <td class="text-center">$Operador</td>
+              <td class="text-center">$12-03-23</td>
+              <!-- botones -->
+              <td class="text-center">
+                <form action="" class="float-end mx-1" method="POST">
+                  <button type="submit" class="btn btn-danger"><i class="bi bi-trash-fill"></i> </button>
+                </form>
+                <form action="" class="float-end">
+                  <button type="submit" class="btn btn-secondary"><i class="bi bi-pencil-square"></i> </button>
+                </form>
+              </td>
+            </tr>
+
+            <tr class="text-center">
+              <th class="text-center" scope="row">$nameUser</th>
+              <td class="text-center">$Nombre</td>
+              <td class="text-center">$Operador</td>
+              <td class="text-center">$12-03-23</td>
+              <!-- botones -->
+              <td class="text-center">
+                <form action="" class="float-end mx-1" method="POST">
+                  <button type="submit" class="btn btn-danger"><i class="bi bi-trash-fill"></i> </button>
+                </form>
+                <form action="" class="float-end">
+                  <button type="submit" class="btn btn-secondary"><i class="bi bi-pencil-square"></i> </button>
+                </form>
+              </td>
+            </tr>
+
           </tbody>
         </table>
+
+        <!-- PAGINACION -->
+
+        <!-- {{ $datos->links() }} -->
+
       </div>
     </div>
   </div>
