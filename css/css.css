@@ -7,9 +7,14 @@ body{
     background-color: rgb(255, 255, 255);
 }
 
+#person{
+    width: 32;
+    height: 32;
+}
+
 /* NAVBAR MAS GRANDE */
 #cuadroNav{
-    height: 65px;
+    height: 58px;
     }
 
 /* TITULO PRINCIAPL DE LA PAGINA */
@@ -24,6 +29,29 @@ h1.titulo{
     color: #BB1167;
 }
 
+.dropdown-menu{
+    width: 20px;
+    font-size: 2px;
+}
+
+.dropdown-item{
+    font-size: 17px;
+}
+
+li{
+    width: 150px;
+}
+/* 
+.navbar-nav{
+text-align: center;
+} */
+
+li.nav-item{
+    font-weight: bold;
+}
+
+
+
 
 /* SUBTITULO PRINCIAPL DE LA PAGINA */
 h2.subtitulo{
@@ -35,11 +63,11 @@ h2.subtitulo{
 
 /* SEPARACION ENTRE ELEMNTOS EN LA NAVBAR */
 li{
-    margin-top: 2px;
-    margin-right: 70px;
-    font-size: 20px;
+    
+    font-size: 15px;
     color: white;
 }
+
 
 /* PLANTILLA PARA TODAS LAS PAGINAS */     /* PLANTILLA PARA TODAS LAS PAGINAS */
 
@@ -60,6 +88,21 @@ li{
 }
 #card_incidentes_helpbox{
 width: 300px;
+
+}
+
+
+#card_agencias_helpbox{
+    width: 300px;
+}
+
+#card_ubicaciones_helpbox{
+    width: 300px;
+}
+
+#card_preguntas_helpbox{
+    width: 300px;
+    
 }
 
 

@@ -40,10 +40,10 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- en el "ul" el ajuste en medio es "mx-auto"  y en el lado izquierdo "me-auto" -->
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav text-center mx-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active" 
-                  aria-current="page" href="#">EXPEDIENTES</a>
+                  aria-current="page" href="#"> EXPEDIENTES</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active"
@@ -59,7 +59,7 @@
               </li>
             </ul>
             <a>
-              <button class="btn btn-warning" style="color: #000000; font-weight: 700;" type="submit">
+              <button class="rounded-5 btn btn-warning" style="color: #000000; font-weight: 700;" type="submit">
                 <i class="bi bi-plus-circle-dotted"></i>
                 Call card</button>
             </a href="#">
@@ -70,7 +70,7 @@
                 <a style="color: #000000;"
                   class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                   aria-expanded="false">
-                  <i class="bi bi-person-circle"></i>
+                  <i id="person" class="bi bi-person-circle"></i>
                 </a>
                 <ul class="dropdown-menu" style="color: #be964c;">
                   <li><a class="dropdown-item" href="#">Action</a></li>
@@ -96,44 +96,213 @@
     <h2 class="subtitulo">Traducciones</h2>
 
 
-    <div id="card_incidentes_helpbox" class="card mt-0 mx-5 text-center border-0">
-          <div class="card-body">
-            <table class="table table-bordered">
-              <thead>
-                <tr>
-                  <th scope="col">ESPAÑOL</th>
-                  <th scope="col">INGLES</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Apuñalamiento</td>
-                  <td>Stabbing</td>
-                </tr>
-                <tr>
-                  <td>Arbol caido</td>
-                  <td>Fallen tree</td>
-                </tr>
-                <tr>
-                  <td>Ataque al corazon</td>
-                  <td>Heart attack</td>
-                </tr>
-                <tr>
-                  <td>Ahogamiento</td>
-                  <td>@Heart attack</td>
-                </tr>
-                <tr>
-                  <td>Ataque al corazon</td>
-                  <td>@Heart attack</td>
-                </tr>
-                <tr>
-                  <td>Ataque al corazon</td>
-                  <td>@Heart attack</td>
-                </tr>
-              </tbody>
-            </table>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <div id="card_incidentes_helpbox" class="card mt-0 mx-5 text-center border-0">
+            <h4>INCIDENTES</h4>    
+            <div class="card-body">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">ESPAÑOL</th>
+                        <th scope="col">INGLES</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Apuñalamiento</td>
+                        <td>Stabbing</td>
+                      </tr>
+                      <tr>
+                        <td>Arbol caido</td>
+                        <td>Fallen tree</td>
+                      </tr>
+                      <tr>
+                        <td>Derrumbe</td>
+                        <td>Collapse</td>
+                      </tr>
+                      <tr>
+                        <td>Ahogamiento</td>
+                        <td>Drowing</td>
+                      </tr>
+                      <tr>
+                        <td>Arbol Caido</td>
+                        <td>Fallen Tree</td>
+                      </tr>
+                      <tr>
+                        <td>Incendio</td>
+                        <td>Fire</td>
+                        <tr>
+                          <td>Explosion</td>
+                          <td>Burst</td>
+                        </tr>
+                        <tr>
+                          <td>Rescate</td>
+                          <td>Rescue</td>
+                        </tr>
+                        <tr>
+                          <td>Enfermedad</td>
+                          <td>Collapse</td>
+                        </tr>
+                        <tr>
+                          <td>Fallecimiento</td>
+                          <td>Death</td>
+                        </tr>
+                        <tr>
+                          <td>Desaparicion</td>
+                          <td>Disappearance</td>
+                        </tr>
+                        <tr>
+                          <td>Inundación</td>
+                          <td>Flood</td>
+                      </tr>
+                    </tbody>
+                  </table>
+              </div>
+           </div>
         </div>
-     </div>
+        <div class="col-sm">
+          <div id="card_agencias_helpbox" class="card mt-0 mx-5 text-center border-0">
+            <h4>AGENCIAS</h4>    
+            <div class="card-body">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">ESPAÑOL</th>
+                        <th scope="col">INGLES</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Bomberos</td>
+                        <td>Firefighters</td>
+                      </tr>
+                      <tr>
+                        <td>Guardia Costera</td>
+                        <td>Coast Guard</td>
+                      </tr>
+                      <tr>
+                        <td>Policia</td>
+                        <td>Police</td>
+                      </tr>
+                      <tr>
+                        <td>Ambulancia</td>
+                        <td>Ambulance</td>
+                      </tr> 
+                    </tbody>
+                  </table>
+              </div>
+           </div>
+
+           <div id="card_ubicaciones_helpbox" class="card mt-0 mx-5 text-center border-0">
+            <h4>UBICACIONES</h4>    
+            <div class="card-body">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">ESPAÑOL</th>
+                        <th scope="col">INGLES</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Provincia</td>
+                        <td>Province</td>
+                      </tr>
+                      <tr>
+                        <td>Municipio</td>
+                        <td>Municipality</td>
+                      </tr>
+                      <tr>
+                        <td>Carretera</td>
+                        <td>Road</td>
+                      </tr>
+                      <tr>
+                        <td>Entidad Población</td>
+                        <td>Entity Population</td>
+                      </tr> 
+                    </tbody>
+                  </table>
+              </div>
+           </div>
+        </div>
+
+
+        <div class="col-sm">
+          <div id="card_preguntas_helpbox" class="card mt-0 mx-5 text-center border-0">
+            <h4>INCIDENTES</h4>    
+            <div class="card-body">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">ESPAÑOL</th>
+                        <th scope="col">INGLES</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Apuñalamiento</td>
+                        <td>Stabbing</td>
+                      </tr>
+                      <tr>
+                        <td>Arbol caido</td>
+                        <td>Fallen tree</td>
+                      </tr>
+                      <tr>
+                        <td>Derrumbe</td>
+                        <td>Collapse</td>
+                      </tr>
+                      <tr>
+                        <td>Ahogamiento</td>
+                        <td>Drowing</td>
+                      </tr>
+                      <tr>
+                        <td>Arbol Caido</td>
+                        <td>Fallen Tree</td>
+                      </tr>
+                      <tr>
+                        <td>Incendio</td>
+                        <td>Fire</td>
+                        <tr>
+                          <td>Explosion</td>
+                          <td>Burst</td>
+                        </tr>
+                        <tr>
+                          <td>Rescate</td>
+                          <td>Rescue</td>
+                        </tr>
+                        <tr>
+                          <td>Enfermedad</td>
+                          <td>Collapse</td>
+                        </tr>
+                        <tr>
+                          <td>Fallecimiento</td>
+                          <td>Death</td>
+                        </tr>
+                        <tr>
+                          <td>Desaparicion</td>
+                          <td>Disappearance</td>
+                        </tr>
+                        <tr>
+                          <td>Inundación</td>
+                          <td>Flood</td>
+                      </tr>
+                    </tbody>
+                  </table>
+              </div>
+           </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+
+
+     
+
+
 
 </body>
 
