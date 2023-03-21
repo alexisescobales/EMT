@@ -4,10 +4,10 @@
 
 @section('content')
 <div class="row">
-    <div class="col-8">
+    <div class="col-md-8">
         {{-- Contenido de la carta --}}
         <div class="card border border-0 mb-3" >
-            <div class="card-header border-0 bg-light border-success text-center">
+            <div class="card-header border-0 bg-light text-center rounded-top">
                 {{-- Contenido del header  --}}
                 <div class="row fs-6 fw-light">
                     <div class="col">Tiempo</div>
@@ -18,6 +18,7 @@
             <div class="card-body ">
                 <div class="row">
                     <div class="col-4">
+                        {{-- Identificación --}}
                         <h5 class="card-title fs-6"><strong>Identificación</strong></h5>
                         <div class="row">
                             <label for="save" class="col-9 text-secondary">Guardar interlocutor?</label>
@@ -51,14 +52,16 @@
                         </div>
                         <div class="mb-2">
                             <label for="antecedentes" class="form-label">Antecedentes del Telefóno</label>
-                            <textarea class="form-control" id="antecedentes" rows="3"></textarea>
+                            <textarea class="form-control" id="antecedentes" rows="5" style="height: 148px"></textarea>
                         </div>
                     </div>
                     <div class="col-8">
-                        <h5 class="card-title fs-6"><strong>Nota Comuna</strong></h5>
-                        <textarea class="form-control" id="antecedentes" rows="3"></textarea>
-                        <div class="mb-2">
-                            <label for="incidente" class="form-label">Incidente</label>
+                        {{-- Nota Comuna --}}
+                        <h5 class="card-title fs-6 " ><strong>Nota Comuna</strong></h5>
+                        <textarea class="form-control" id="antecedentes" style="height: 94px"></textarea>
+                        <div class="mb-2" style="margin-top: 13px">
+                            {{-- Incidentes --}}
+                            <h5 class="fs-6" ><strong>Incidente</strong></h5>
                             <select class="form-select w-100 mb-2" aria-label="Default select example">
                                 <option selected>Tipo de Incidente</option>
                                 <option value="1">One</option>
@@ -67,14 +70,14 @@
                                 <option selected> Tipo en Concreto..</option>
                                 <option value="1">One</option>
                             </select>
-                            <textarea class="form-control" id="antecedentes" rows="3" placeholder="Explicación del incidente.."></textarea>
+                            <textarea class="form-control" id="antecedentes" placeholder="Explicación del incidente.." style="height: 66px"></textarea>
                         </div>
-                        <h5 fs-6>Localización</h5>
+                        {{-- Localización --}}
+                        <h5 class="card-title fs-6"><strong>Localización</strong></h5>
                         <div class="row">
                             <div class="col">
-
-                                <div class="row">
-                                    <label for="cataluna" class="col-9 text-secondary">Esta en cataluña?</label>
+                                <div class="row mt-2">
+                                    <label for="cataluna" class="col-9 text-secondary mb-3">Esta en cataluña?</label>
                                     <div class="col-3">
                                         <input type="checkbox" name="cataluna" id="cataluna">
                                     </div>
@@ -91,12 +94,13 @@
                                     <label for="municipio" class="form-label">Municipio</label>
                                     <input type="text" class="form-control w-100" id="municipio">
                                 </div>
-                                {{-- <div class="mb-2">
-                                    <textarea class="form-control" id="antecedentes" rows="1"></textarea>
-                                </div> --}}
+                                <div class="mb-2">
+                                    <textarea class="form-control" id="antecedentes" rows="2"></textarea>
+                                </div>
                             </div>
                             <div class="col">
-                                <select class="form-select w-100 mb-2" aria-label="Default select example">
+                                {{-- Tipo de localización --}}
+                                <select class="form-select w-100" aria-label="Default select example" style="margin-bottom: 9px">
                                     <option selected>Tipo de localización</option>
                                     <option value="1">Carretera</option>
                                 </select>
@@ -112,6 +116,9 @@
                                     <label for="municipio" class="form-label">Sentido</label>
                                     <input type="text" class="form-control w-100" id="municipio">
                                 </div>
+                                <div class="mb-2">
+                                    <textarea class="form-control" id="antecedentes" rows="2"></textarea>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -121,14 +128,38 @@
         </div>
     </div>
 
-    <div class="col-4 d-flex flex-column" style="background-color: green">
-        <div>
+    <div class="col-md-4 d-flex flex-column">
+        <div class="h-50">
             {{-- Contenido de los expedientes --}}
-            <p>a</p>
+        <table class="table bg-light rounded overflow-hidden">
+                <thead>
+                    <tr>
+                        <th scope="col">Incidente</th>
+                        <th scope="col">Estado expediente</th>
+                        <th scope="col">Asociar</th>
+                        <th scope="col">Creado</th>
+                    </tr>
+                </thead>
+                <tbody class="text-center">
+                    <tr>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>a</td>
+                    </tr>
+                    <tr>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>a</td>
+                    </tr>
+
+                </tbody>
+                <caption><button class="btn btn-warning btn-sm float-end fw-bold">Nuevo Expediente</button></caption>
+            </table>
         </div>
-        <div>
+        <div class="h-50">
             {{-- Contenido del mapa --}}
-            <p>b</p>
         </div>
     </div>
 </div>
